@@ -71,7 +71,7 @@
 				},
 			
 			disable_pjax: false,
-			headroom: false
+			headroom: true
 		}
 	</script>
 	<script>
@@ -219,20 +219,6 @@
 											
 										</li>
 									
-										<li class='nav-item dropdown'>
-											<a href='' class='nav-link' onclick='return false;' data-toggle='dropdown' no-pjax>
-												<i class='ni ni-book-bookmark d-lg-none'></i>
-												<span class='nav-link-inner--text'>二级菜单</span>
-											</a>
-											
-													<div class="dropdown-menu">
-														
-															<a href='/' class='dropdown-item'>归档</a>
-														
-													</div>
-												
-										</li>
-									
 							</ul>
 						
 					<ul class="navbar-nav align-items-lg-center ml-lg-auto">
@@ -277,7 +263,7 @@
 </div>
 <!--Banner-->
 <section id="banner" class="banner section section-lg section-shaped">
-	<div class="shape shape-style-1 shape-primary">
+	<div class="shape shape-style-1 shape-default">
 		<span></span>
 		<span></span>
 		<span></span>
@@ -358,6 +344,23 @@
 	</style>
 
 
+
+	<style>
+		#banner:after {
+			content: '';
+			width: 100vw;
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 120px;
+			background: linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.15) 35%, rgba(0,0,0,0) 100%);
+			display: block;
+			z-index: -1;
+		}
+		.banner-title {
+			text-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+		}
+	</style>
 
 
 <div id="float_action_buttons" class="float-action-buttons fabtns-unloaded">
@@ -455,7 +458,7 @@
 			
 			
 				<ul id='leftbar_part1_menu' class='leftbar-menu'>
-					<li class='leftbar-menu-item'><a href='/'>首页</a></li><li class='leftbar-menu-item'><a href='/archives'>归档</a></li><li class='leftbar-menu-item leftbar-menu-item-haschildren'><a no-pjax onclick='return false;'>二级菜单</a><ul class='leftbar-menu-item leftbar-menu-subitem shadow-sm'><li class='leftbar-menu-item leftbar-menu-item-haschildren'><a no-pjax onclick='return false;'>三级菜单</a><ul class='leftbar-menu-item leftbar-menu-subitem shadow-sm'><li class='leftbar-menu-item'><a href='/'>首页</a></li></ul></li></ul></li>
+					<li class='leftbar-menu-item'><a href='/'>首页</a></li><li class='leftbar-menu-item'><a href='/archives'>归档</a></li>
 				</ul>
 			
 			<div class="card-body text-center leftbar-search-button">
@@ -500,8 +503,8 @@
 							</div>
 						
 						<div class="tab-pane fade text-center" id="leftbar_tab_overview" role="tabpanel" aria-labelledby="leftbar_tab_overview_btn">
-							<img id="leftbar_overview_author_image" src="/assets/img/auther.jpg" class="img-fluid rounded-circle shadow-sm" style="width: 100px;" alt="avatar">
-							<h6 id="leftbar_overview_author_name">my chaotic notebook</h6>
+							<img id="leftbar_overview_author_image" src="/assets/img/avatormales.ico" class="img-fluid rounded-circle shadow-sm" style="width: 100px;" alt="avatar">
+							<h6 id="leftbar_overview_author_name">mingec</h6>
 							<nav class="site-state">
 								<div class="site-state-item site-state-posts">
 									<a href="/archives">
@@ -511,7 +514,7 @@
 								</div>
 								<div class="site-state-item site-state-categories">
 									<a data-toggle="modal" data-target="#blog_categories">
-										<span class="site-state-item-count">0</span>
+										<span class="site-state-item-count">1</span>
 										<span class="site-state-item-name">分类</span>
 									</a>
 								</div>      
@@ -525,18 +528,6 @@
 							
 									<div class="site-author-links">
 										
-											<div class='site-author-links-item'>
-												<a href="/" rel='noopener' target='_blank'>aaa</a>
-											</div>
-										
-											<div class='site-author-links-item'>
-												<a href="/" rel='noopener' target='_blank'>bbb</a>
-											</div>
-										
-											<div class='site-author-links-item'>
-												<a href="/" rel='noopener' target='_blank'>ccc</a>
-											</div>
-										
 									</div>
 								
 							
@@ -545,15 +536,7 @@
 										<ul class='site-friend-links-ul'>
 											
 												<li class='site-friend-links-item'>
-													<a href='/' rel='noopener' target='_blank'>aaa</a>
-												</li>
-											
-												<li class='site-friend-links-item'>
-													<a href='/' rel='noopener' target='_blank'>bbb</a>
-												</li>
-											
-												<li class='site-friend-links-item'>
-													<a href='/' rel='noopener' target='_blank'>ccc</a>
+													<a href='https://github.com/mingec' rel='noopener' target='_blank'>github</a>
 												</li>
 											
 										</ul>
@@ -575,7 +558,7 @@
 				</button>
 			</div>
 			<div class="modal-body">
-				
+				<a class="badge badge-secondary tag" href="/categories/teest/" rel="tag">teest <span class="tag-num">1</span></a>
 			</div>
 		</div>
 	</div>
@@ -619,26 +602,8 @@
 							<div class="post-meta-devide">|</div>
 						
 						<div class="post-meta-detail post-meta-detail-words">
-							<i class="fa fa fa-book" aria-hidden="true"></i>
-							<span id="busuanzi_container_page_pv">
-								阅读<span id="busuanzi_value_page_pv"></span>次
-							</span>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-words">
 							<i class="fa fa-file-word-o" aria-hidden="true"></i>
 							14 字
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-readingtime">
-							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
-							1 分钟
 						</div>
 					
 		</div>
