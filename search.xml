@@ -4,19 +4,6 @@
   
     
     <entry>
-      <title></title>
-      <link href="/2023/08/31/github%20using%20note/"/>
-      <url>/2023/08/31/github%20using%20note/</url>
-      
-        <content type="html"><![CDATA[<h1 id="git-using-note"><a href="#git-using-note" class="headerlink" title="git using note"></a>git using note</h1><p>1.把文件夹设置为git仓库：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure><p>2.新文件：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add filename</span><br></pre></td></tr></table></figure><p>3.提交到本地：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &quot;zhushi&quot;</span><br></pre></td></tr></table></figure><p>4.查看版本：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git log / git log --pretty=oneline / git reflog</span><br></pre></td></tr></table></figure><p>5.回退版本：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git reset --hard HEAD^  //（HEAD表示最新版本，每加一个^,退一个版本）</span><br><span class="line">git reset --hard d52e2……//（版本号）</span><br></pre></td></tr></table></figure><p>6.在github创建repo后，把本地仓库推到远程：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin git@github.com:mingec/reponame.git</span><br></pre></td></tr></table></figure><p>7.更新远程仓库：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure><p>8.把markdown导为docx：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pandoc test.md -o test.docx</span><br></pre></td></tr></table></figure><p>À suivre</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Oppenheimer</title>
       <link href="/2023/08/30/Oppenheimer/"/>
       <url>/2023/08/30/Oppenheimer/</url>
