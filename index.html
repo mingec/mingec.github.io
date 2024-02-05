@@ -1,14 +1,25 @@
 <!DOCTYPE html>
-
-<html class="article-header-style-default">
+<html lang="en">
 <head>
-	
-	<title>my chaotic notebook</title>
-	<meta charset="utf-8">
-	
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	
-	<meta name="description" content="mingec&#39;s blog">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha256-wiz7ZSCn/btzhjKDQBms9Hx4sSeUYsDrTLg7roPstac=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.19.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="mingec&#39;s blog">
 <meta property="og:type" content="website">
 <meta property="og:title" content="my chaotic notebook">
 <meta property="og:url" content="http://example.com/index.html">
@@ -18,416 +29,16 @@
 <meta property="article:author" content="mingec">
 <meta name="twitter:card" content="summary">
 
-	<meta name="theme-color" content="#5e72e4">
-	<meta name="theme-color-rgb" content="94,114,228">
-	<meta name="theme-color-origin" content="#5e72e4">
-	<meta name="argon-enable-custom-theme-color" content="true">
-	<meta name="theme-card-radius" content="4">
-	<meta name="theme-version" content="1.0.2">
-	<link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-	<link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
 
-	
-<link rel="stylesheet" href="/assets/argon_css_merged.css">
-
-	
-<link rel="stylesheet" href="/style.css">
-
-	
-<link rel="stylesheet" href="//fonts.loli.net/css?family=Open+Sans:300,400,600,700|Noto+Serif+SC:300,600&display=swap.css">
-
-	
-<script src="/assets/argon_js_merged.js"></script>
-
-	
-<script src="/assets/js/argon.min.js"></script>
-
-	
-<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-	
-
-	<script>
-		var argonConfig = {
-			language: "zh_CN",
-			
-				zoomify: {
-					duration: 200,
-					easing: "cubic-bezier(0.4,0,0,1)",
-					scale: 0.9
-				},
-			
-			pangu: "false",
-			
-				lazyload: {
-					threshold: 800,
-					effect: "fadeIn"
-				},
-			
-			disable_pjax: false,
-			headroom: true
-		}
-	</script>
-	<script>
-		var darkmodeAutoSwitch = "false";
-		function setDarkmode(enable){
-			if (enable == true){
-				$("html").addClass("darkmode");
-			}else{
-				$("html").removeClass("darkmode");
-			}
-			$(window).trigger("scroll");
-		}
-		function toggleDarkmode(){
-			if ($("html").hasClass("darkmode")){
-				setDarkmode(false);
-				sessionStorage.setItem("Argon_Enable_Dark_Mode", "false");
-			}else{
-				setDarkmode(true);
-				sessionStorage.setItem("Argon_Enable_Dark_Mode", "true");
-			}
-		}
-		if (sessionStorage.getItem("Argon_Enable_Dark_Mode") == "true"){
-			setDarkmode(true);
-		}
-		function toggleDarkmodeByPrefersColorScheme(media){
-			if (sessionStorage.getItem('Argon_Enable_Dark_Mode') == "false" || sessionStorage.getItem('Argon_Enable_Dark_Mode') == "true"){
-				return;
-			}
-			if (media.matches){
-				setDarkmode(true);
-			}else{
-				setDarkmode(false);
-			}
-		}
-		function toggleDarkmodeByTime(){
-			if (sessionStorage.getItem('Argon_Enable_Dark_Mode') == "false" || sessionStorage.getItem('Argon_Enable_Dark_Mode') == "true"){
-				return;
-			}
-			let hour = new Date().getHours();
-			if (hour < 7 || hour >= 22){
-				setDarkmode(true);
-			}else{
-				setDarkmode(false);
-			}
-		}
-		if (darkmodeAutoSwitch == 'system'){
-			var darkmodeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-			darkmodeMediaQuery.addListener(toggleDarkmodeByPrefersColorScheme);
-			toggleDarkmodeByPrefersColorScheme(darkmodeMediaQuery);
-		}
-		if (darkmodeAutoSwitch == 'time'){
-			toggleDarkmodeByTime();
-		}
-		if (darkmodeAutoSwitch == 'alwayson'){
-			setDarkmode(true);
-		}
-
-		function toggleAmoledDarkMode(){
-			$("html").toggleClass("amoled-dark");
-			if ($("html").hasClass("amoled-dark")){
-				localStorage.setItem("Argon_Enable_Amoled_Dark_Mode", "true");
-			}else{
-				localStorage.setItem("Argon_Enable_Amoled_Dark_Mode", "false");
-			}
-		}
-		if (localStorage.getItem("Argon_Enable_Amoled_Dark_Mode") == "true"){
-			$("html").addClass("amoled-dark");
-		}else if (localStorage.getItem("Argon_Enable_Amoled_Dark_Mode") == "false"){
-			$("html").removeClass("amoled-dark");
-		}
-	</script>
-	<script>
-		if (navigator.userAgent.indexOf("Safari") !== -1 && navigator.userAgent.indexOf("Chrome") === -1){
-			$("html").addClass("using-safari");
-		}
-	</script>
-
-	
-		
-<script src="/assets/vendor/smoothscroll/smoothscroll1.js"></script>
-
-	
-<meta name="generator" content="Hexo 6.3.0"></head>
+<link rel="canonical" href="http://example.com/">
 
 
 
-<style id="themecolor_css">
-	
-	:root{
-		--themecolor: #5e72e4;
-		--themecolor-dark0: #5368E2;
-		--themecolor-dark: #485FE0;
-		--themecolor-dark2: #324CDD;
-		--themecolor-dark3: #233DD2;
-		--themecolor-light: #8A98EB;
-		--themecolor-rgbstr: 94,114,228;
-		--themecolor-gradient: linear-gradient(150deg,var(--themecolor-light) 15%, var(--themecolor) 70%, var(--themecolor-dark0) 94%);
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"en","comments":"","permalink":"","path":"index.html","title":""}</script>
 
-	}
-</style>
-<style id="theme_cardradius_css">
-	:root{
-		--card-radius: 4px;
-	}
-</style>
-
-<body>
-<div id="toolbar">
-	<header class="header-global">
-		<nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light bg-primary headroom--not-bottom headroom--not-top headroom--pinned">
-			<div class="container">
-				
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<a class="navbar-brand" href="/">my chaotic notebook</a>
-				<div class="navbar-collapse collapse" id="navbar_global">
-					<div class="navbar-collapse-header">
-						<div class="row">
-							<div class="col-6 collapse-brand"></div>
-							<div class="col-6 collapse-close">
-								<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
-									<span></span>
-									<span></span>
-								</button>
-							</div>
-						</div>
-					</div>
-					<ul id="navbar_search_btn_mobile" class="navbar-nav align-items-lg-center ml-lg-auto">
-						<li class="nav-item" data-toggle="modal" data-target="#argon_search_modal" style="padding-left: 5px;">
-							<a class="nav-link nav-link-icon">
-								<i class="fa fa-search"></i>
-								<span class="nav-link-inner--text d-lg-none">搜索</span>
-							</a>
-						</li>
-					</ul>
-					
-							<ul class='navbar-nav navbar-nav-hover align-items-lg-center'>
-								
-										<li class='nav-item'>
-											<a href='/' class='nav-link' >
-												<i class='ni ni-book-bookmark d-lg-none'></i>
-												<span class='nav-link-inner--text'>首页</span>
-											</a>
-											
-										</li>
-									
-							</ul>
-						
-					<ul class="navbar-nav align-items-lg-center ml-lg-auto">
-						<li class="nav-item" data-toggle="modal" data-target="#argon_search_modal" id="navbar_search_btn_pc">
-							<a class="nav-link nav-link-icon">
-								<i class="fa fa-search"></i>
-								<span class="nav-link-inner--text d-lg-none">搜索</span>
-							</a>
-						</li>
-					</ul>
-				</div>
-				
-				<div id="navbar_menu_mask" data-toggle="collapse" data-target="#navbar_global"></div>
-			</div>
-		</nav>
-	</header>
-</div>
-<div class="modal fade" id="argon_search_modal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title">搜索</h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-			</div>
-			<div class="modal-body">
-				<!-- TODO -->
-<div class="form-group mb-3">
-	<div class="input-group input-group-alternative">
-		<div class="input-group-prepend">
-			<span class="input-group-text"><i class="fa fa-search"></i></span>
-		</div>
-		<input id="local-search-input" class="form-control" placeholder="搜索什么..." type="text"  autocomplete="off" data-search.path="search.xml" data-config.root="/">
-	</div>
-	<div id="local-search-result"></div>
-</div>
-
-			</div>
-		</div>
-	</div>
-</div>
-<!--Banner-->
-<section id="banner" class="banner section section-lg section-shaped">
-	<div class="shape shape-style-1 shape-default">
-		<span></span>
-		<span></span>
-		<span></span>
-		<span></span>
-		<span></span>
-		<span></span>
-		<span></span>
-		<span></span>
-		<span></span>
-	</div>
-
-	
-	<div id="banner_container" class="banner-container container text-center">
-		
-			<div class="banner-title text-white"><span class="banner-title-inner">my chaotic notebook</span>
-		
-		</div>
-	</div>
-	
-		<style>
-			section.banner{
-				background-image: url(/assets/img/banner.jpg) !important;
-			}
-		</style>
-	
-</section>
-
-
-	<style>
-		#content:before {
-			content: '';
-			display: block;
-			position: fixed;
-			left: 0;
-			right: 0;
-			top: 0;
-			bottom: 0;
-			z-index: -2;
-			background: url(/assets/img/banner.jpg);
-			background-position: center;
-			background-size: cover;
-			background-repeat: no-repeat;
-			opacity: 1;
-			transition: opacity .5s ease;
-		}
-		html.darkmode #content:before{
-			filter: brightness(0.65);
-		}
-		
-			#content:after {
-				content: '';
-				display: block;
-				position: fixed;
-				left: 0;
-				right: 0;
-				top: 0;
-				bottom: 0;
-				z-index: -2;
-				background: url(/assets/img/banner.jpg);
-				background-position: center;
-				background-size: cover;
-				background-repeat: no-repeat;
-				opacity: 0;
-				transition: opacity .5s ease;
-			}
-			html.darkmode #content:after {
-				opacity: 1;
-			}
-			html.darkmode #content:before {
-				opacity: 0;
-			}
-		
-		
-			#banner, #banner .shape {
-				background: transparent !important;
-			}
-		
-	</style>
-
-
-
-	<style>
-		#banner:after {
-			content: '';
-			width: 100vw;
-			position: absolute;
-			left: 0;
-			top: 0;
-			height: 120px;
-			background: linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.15) 35%, rgba(0,0,0,0) 100%);
-			display: block;
-			z-index: -1;
-		}
-		.banner-title {
-			text-shadow: 0 5px 15px rgba(0, 0, 0, .2);
-		}
-	</style>
-
-
-<div id="float_action_buttons" class="float-action-buttons fabtns-unloaded">
-	<button id="fabtn_toggle_sides" class="btn btn-icon btn-neutral fabtn shadow-sm" type="button" aria-hidden="true" tooltip-move-to-left="移至左侧" tooltip-move-to-right="移至右侧">
-		<span class="btn-inner--icon fabtn-show-on-right"><i class="fa fa-caret-left"></i></span>
-		<span class="btn-inner--icon fabtn-show-on-left"><i class="fa fa-caret-right"></i></span>
-	</button>
-	<button id="fabtn_back_to_top" class="btn btn-icon btn-neutral fabtn shadow-sm" type="button" aria-label="Back To Top" tooltip="回到顶部">
-		<span class="btn-inner--icon"><i class="fa fa-angle-up"></i></span>
-	</button>
-	<button id="fabtn_go_to_comment" class="btn btn-icon btn-neutral fabtn shadow-sm d-none" type="button" <-% theme.fab_show_gotocomment_button ? "" : "style='display: none;'"  aria-label="Comment" tooltip="评论">
-		<span class="btn-inner--icon"><i class="fa fa-comment-o"></i></span>
-	</button>
-	<button id="fabtn_toggle_darkmode" class="btn btn-icon btn-neutral fabtn shadow-sm" type="button" <-% theme.fab_show_darkmode_button ? "" : "style='display: none;'"  aria-label="Toggle Darkmode" tooltip-darkmode="夜间模式" tooltip-blackmode="暗黑模式" tooltip-lightmode="日间模式">
-		<span class="btn-inner--icon"><i class="fa fa-moon-o"></i><i class='fa fa-lightbulb-o'></i></span>
-	</button>
-	<button id="fabtn_toggle_blog_settings_popup" class="btn btn-icon btn-neutral fabtn shadow-sm" type="button" <-% theme.fab_show_settings_button ? "" : "style='display: none;'"  aria-label="Open Blog Settings Menu" tooltip="设置">
-		<span class="btn-inner--icon"><i class="fa fa-cog"></i></span>
-	</button>
-	<div id="fabtn_blog_settings_popup" class="card shadow-sm" style="opacity: 0;" aria-hidden="true">
-		<div id="close_blog_settings"><i class="fa fa-close"></i></div>
-		<div class="blog-setting-item mt-3">
-			<div style="transform: translateY(-4px);"><div id="blog_setting_toggle_darkmode_and_amoledarkmode" tooltip-switch-to-darkmode="切换到夜间模式" tooltip-switch-to-blackmode="切换到暗黑模式"><span>夜间模式</span><span>暗黑模式</span></div></div>
-			<div style="flex: 1;"></div>
-			<label id="blog_setting_darkmode_switch" class="custom-toggle">
-				<span class="custom-toggle-slider rounded-circle"></span>
-			</label>
-		</div>
-		<div class="blog-setting-item mt-3">
-			<div style="flex: 1;">字体</div>
-			<div>
-				<button id="blog_setting_font_sans_serif" type="button" class="blog-setting-font btn btn-outline-primary blog-setting-selector-left">Sans Serif</button><button id="blog_setting_font_serif" type="button" class="blog-setting-font btn btn-outline-primary blog-setting-selector-right">Serif</button>
-			</div>
-		</div>
-		<div class="blog-setting-item mt-3">
-			<div style="flex: 1;">阴影</div>
-			<div>
-				<button id="blog_setting_shadow_small" type="button" class="blog-setting-shadow btn btn-outline-primary blog-setting-selector-left">浅阴影</button><button id="blog_setting_shadow_big" type="button" class="blog-setting-shadow btn btn-outline-primary blog-setting-selector-right">深阴影</button>
-			</div>
-		</div>
-		<div class="blog-setting-item mt-3 mb-3">
-			<div style="flex: 1;">滤镜</div>
-			<div id="blog_setting_filters" class="ml-3">
-				<button id="blog_setting_filter_off" type="button" class="blog-setting-filter-btn ml-0" filter-name="off">关闭</button>
-				<button id="blog_setting_filter_sunset" type="button" class="blog-setting-filter-btn" filter-name="sunset">日落</button>
-				<button id="blog_setting_filter_darkness" type="button" class="blog-setting-filter-btn" filter-name="darkness">暗化</button>
-				<button id="blog_setting_filter_grayscale" type="button" class="blog-setting-filter-btn" filter-name="grayscale">灰度</button>
-			</div>
-		</div>
-		<div class="blog-setting-item mb-3">
-			<div id="blog_setting_card_radius_to_default" style="cursor: pointer;" tooltip="恢复默认">圆角</div>
-			<div style="flex: 1;margin-left: 20px;margin-right: 8px;transform: translateY(2px);">
-				<div id="blog_setting_card_radius"></div>
-			</div>
-		</div>
-		
-			<div class="blog-setting-item mt-1 mb-3">
-				<div style="flex: 1;">主题色</div>
-				<div id="theme-color-picker" class="ml-3"></div>
-			</div>
-		
-	</div>
-	<button id="fabtn_open_sidebar" class="btn btn-icon btn-neutral fabtn shadow-sm" type="button" aria-label="Open Sidebar Menu" tooltip="菜单">
-		<span class="btn-inner--icon"><i class="fa fa-bars"></i></span>
-	</button>
-	<button id="fabtn_reading_progress" class="btn btn-icon btn-neutral fabtn shadow-sm" type="button" aria-hidden="true" tooltip="阅读进度">
-		<div id="fabtn_reading_progress_bar" style="width: 0%;"></div>
-		<span id="fabtn_reading_progress_details">0%</span>
-	</button>
-</div>
-
-<div id="content" class="site-content">
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>my chaotic notebook</title>
+  
 
 
 
@@ -436,340 +47,507 @@
 
 
 
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
 
-<div class="page-information-card-container">
-	
-</div>
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
 
-<div id="sidebar_mask"></div>
-<aside id="leftbar" class="leftbar widget-area" role="complementary">
-		
-		<div id="leftbar_part1" class="widget widget_search card bg-white shadow-sm border-0">
-			<div class="leftbar-banner card-body">
-				<span class="leftbar-banner-title text-white">my chaotic notebook</span>
-				
-				
-			</div>
-			
-			
-				<ul id='leftbar_part1_menu' class='leftbar-menu'>
-					<li class='leftbar-menu-item current'><a href='/'>首页</a></li><li class='leftbar-menu-item'><a href='/archives'>归档</a></li>
-				</ul>
-			
-			<div class="card-body text-center leftbar-search-button">
-				<button id="leftbar_search" class="btn btn-secondary btn-lg active btn-sm btn-block border-0" role="button" data-toggle="modal" data-target="#argon_search_modal" >
-					<i class="menu-item-icon fa fa-search mr-0"></i> 搜索
-				</button>
-			</div>
-		</div>
-		<div id="leftbar_part2" class="widget widget_search card bg-white shadow-sm border-0">
-			<div id="leftbar_part2_inner" class="card-body">
-				
-				<div class="nav-wrapper" style="padding-top: 5px; display:none; ">
-	                <ul class="nav nav-pills nav-fill" role="tablist">
-						
-						<li class="nav-item sidebar-tab-switcher">
-							<a class="active show" id="leftbar_tab_overview_btn" data-toggle="tab" href="#leftbar_tab_overview" role="tab" aria-controls="leftbar_tab_overview" no-pjax>站点概览</a>
-						</li>
-	                </ul>
-				</div>
-				<div>
-					<div class="tab-content" style="padding: 10px 10px 0 10px;">
-						
-						<div class="tab-pane fade text-center active show" id="leftbar_tab_overview" role="tabpanel" aria-labelledby="leftbar_tab_overview_btn">
-							<img id="leftbar_overview_author_image" src="/assets/img/avatormales.ico" class="img-fluid rounded-circle shadow-sm" style="width: 100px;" alt="avatar">
-							<h6 id="leftbar_overview_author_name">mingec</h6>
-							<nav class="site-state">
-								<div class="site-state-item site-state-posts">
-									<a href="/archives">
-										<span class="site-state-item-count">4</span>
-										<span class="site-state-item-name">文章</span>
-									</a>
-								</div>
-								<div class="site-state-item site-state-categories">
-									<a data-toggle="modal" data-target="#blog_categories">
-										<span class="site-state-item-count">1</span>
-										<span class="site-state-item-name">分类</span>
-									</a>
-								</div>      
-								<div class="site-state-item site-state-tags">
-									<a data-toggle="modal" data-target="#blog_tags">
-										<span class="site-state-item-count">1</span>
-										<span class="site-state-item-name">标签</span>
-									</a>
-								</div>
-							</nav>
-							
-									<div class="site-author-links">
-										
-									</div>
-								
-							
-									<div class='site-friend-links'>
-										<div class='site-friend-links-title'><i class='fa fa-fw fa-link'></i> Links</div>
-										<ul class='site-friend-links-ul'>
-											
-												<li class='site-friend-links-item'>
-													<a href='https://github.com/mingec' rel='noopener' target='_blank'>my github</a>
-												</li>
-											
-												<li class='site-friend-links-item'>
-													<a href='https://ahead-of-north.github.io/' rel='noopener' target='_blank'>friend link</a>
-												</li>
-											
-										</ul>
-									</div>
-								
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-</aside>
-<div class="modal fade" id="blog_categories" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title">分类</h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-			</div>
-			<div class="modal-body">
-				<a class="badge badge-secondary tag" href="/categories/%E7%94%9F%E6%B4%BB/" rel="tag">生活 <span class="tag-num">1</span></a>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="modal fade" id="blog_tags" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title">标签</h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-			</div>
-			<div class="modal-body">
-				<a class="badge badge-secondary tag" href="/tags/%E6%97%85%E8%A1%8C/" rel="tag">旅行 <span class="tag-num">1</span></a>
-			</div>
-		</div>
-	</div>
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">my chaotic notebook</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+    </div>
+  </div>
 </div>
 
 
-<div id="primary" class="content-area">
-	<main id="main" class="site-main" role="main">
-		
-			
-	<article class="post card bg-white shadow-sm border-0 ">
-	<header class="post-header text-center">
-		
-		<a class="post-title" href="/2024/02/03/life%20is%20a%20fucking%20movie/">life is a fucking movie</a>
-		<div class="post-meta">
-			
-						
-						<div class="post-meta-detail post-meta-detail-time">
-							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2024-2-3 19:26:24 | 编辑于 2024-2-4 0:08:06">2024-2-3 19:26
-							</time>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-words">
-							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							892 字
-						</div>
-					
-		</div>
-		
-	</header>
-
-	<div class="post-content">
-		
-			
-				life is a fucking movie西安又下雪了，与考数据库和编译原理那天的雪不太一样，那次的雪势更大，这次的时间更长。
-之前就知道自己不喜欢下雪，因为很不喜欢下雪后被人踩过的脏脏的雪。但昨天晚上在阳台上突然发现，自己从小时候就喜欢雪后晚上的天空。我一直觉得雪后的夜晚有层粉色，“雪照星空”。
-复盘今天的事情每次和父母相处超过两周时间，必然...
-			
-		
-	</div>
-
-	
-</article>
-
-
-	<article class="post card bg-white shadow-sm border-0 ">
-	<header class="post-header text-center">
-		
-		<a class="post-title" href="/2023/10/23/%E7%88%B7%E7%88%B7%EF%BC%8C%E4%BD%A0%E5%85%B3%E6%B3%A8%E7%9A%84%E5%8D%9A%E4%B8%BB%E6%9B%B4%E6%96%B0%E5%95%A6%EF%BC%81/">爷爷，你关注的博主更新啦！</a>
-		<div class="post-meta">
-			
-						
-						<div class="post-meta-detail post-meta-detail-time">
-							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2023-10-23 1:06:45 | 编辑于 2023-10-23 19:19:59">2023-10-23 1:06
-							</time>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-words">
-							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							1k 字
-						</div>
-					
-		</div>
-		
-	</header>
-
-	<div class="post-content">
-		
-			
-				没想到我的博客也能被催更。感谢doctor d！
-每次回顾过去的一段时间，都会不由自主地说出：”过去xx天过得就像💩一样“。但如果再稍微仔细想想的话，还是会有一些小小的快乐片段夹杂在其中。而最近也不例外。太多时候都会感到自己运气很不好，心态很不好，记性也很不好。很小的困难就能打倒我。
-有过一些开心的moments。
-比如七号晚上的时候莫名其妙地抢...
-			
-		
-	</div>
-
-	
-</article>
-
-
-	<article class="post card bg-white shadow-sm border-0 ">
-	<header class="post-header text-center">
-		
-		<a class="post-title" href="/2023/08/22/%E5%91%BC%E5%92%8C%E6%B5%A9%E7%89%B9Hohhot/">呼和浩特Hohhot</a>
-		<div class="post-meta">
-			
-						
-						<div class="post-meta-detail post-meta-detail-time">
-							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2023-8-22 17:04:39 | 编辑于 2023-8-30 23:47:38">2023-8-22 17:04
-							</time>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-categories">
-							<i class="fa fa-bookmark-o" aria-hidden="true"></i>
-							<a class="post-meta-detail-catagory-link" href="/categories/%E7%94%9F%E6%B4%BB/">生活</a>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-words">
-							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							939 字
-						</div>
-					
-		</div>
-		
-	</header>
-
-	<div class="post-content">
-		
-			
-				一直不知道怎么开头，就先这样吧。
-和朋友说自己像是有“幼儿园综合征”，在春游前一天会兴奋的睡不着。
-仿佛是突然就正式地决定了今年一定要去一次周杰伦的演唱会，然后严肃地在闲鱼上找卖家，很快地买了票，兴致勃勃地计划行程。我给好朋友说：人在接近幸福的时候最幸福。果然是这样。整个暑假都几乎是短裤＋拖鞋的我开始为演唱会准备自认为得体的衣服，同时拍照的时候能更...
-			
-		
-	</div>
-
-	
-		<div class="post-tags">
-			<i class="fa fa-tags" aria-hidden="true"></i>
-			<a class="tag badge badge-secondary post-meta-detail-tag -none-link" href="/tags/%E6%97%85%E8%A1%8C/" rel="tag">旅行</a>
-		</div>
-	
-</article>
-
-
-	<article class="post card bg-white shadow-sm border-0 ">
-	<header class="post-header text-center">
-		
-		<a class="post-title" href="/2023/08/12/first-blog/">first blog</a>
-		<div class="post-meta">
-			
-						
-						<div class="post-meta-detail post-meta-detail-time">
-							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2023-8-12 16:21:24 | 编辑于 2024-1-30 20:17:13">2023-8-12 16:21
-							</time>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-words">
-							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							16 字
-						</div>
-					
-		</div>
-		
-	</header>
-
-	<div class="post-content">
-		
-			
-				大家好，这是我第一篇自己完成的博客！！！
-			
-		
-	</div>
-
-	
-</article>
 
 
 
 
 
+</header>
+        
+  
+  <aside class="sidebar">
 
-		
-		
-		
-		
-		
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
 
-					<footer id="footer" class="site-footer card shadow-sm border-0">
-						
-						<div>Theme <a href="https://github.com/solstice23/hexo-theme-argon"><strong>Argon</strong></a> | Powered by Hexo</div>
-						<span id="busuanzi_container_site_uv">
-							本站访客数 <span id="busuanzi_value_site_uv"></span> 人次
-						</span>
-					</footer>
-				</main>
-			</div>
-		</div>
-		
-<script src="/argontheme.js"></script>
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
 
-		
-		
-		
-
-		
-
-	</div>
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">mingec</p>
+  <div class="site-description" itemprop="description">mingec's blog</div>
 </div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/02/03/life%20is%20a%20fucking%20movie/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mingec">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="my chaotic notebook">
+      <meta itemprop="description" content="mingec's blog">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | my chaotic notebook">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/02/03/life%20is%20a%20fucking%20movie/" class="post-title-link" itemprop="url">life is a fucking movie</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2024-02-03 19:26:24" itemprop="dateCreated datePublished" datetime="2024-02-03T19:26:24+08:00">2024-02-03</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024-02-04 00:08:06" itemprop="dateModified" datetime="2024-02-04T00:08:06+08:00">2024-02-04</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="life-is-a-fucking-movie"><a href="#life-is-a-fucking-movie" class="headerlink" title="life is a fucking movie"></a>life is a fucking movie</h1><p>西安又下雪了，与考数据库和编译原理那天的雪不太一样，那次的雪势更大，这次的时间更长。</p>
+<p>之前就知道自己不喜欢下雪，因为很不喜欢下雪后被人踩过的脏脏的雪。但昨天晚上在阳台上突然发现，自己从小时候就喜欢雪后晚上的天空。我一直觉得雪后的夜晚有层粉色，“雪照星空”。</p>
+<h4 id="复盘今天的事情"><a href="#复盘今天的事情" class="headerlink" title="复盘今天的事情"></a>复盘今天的事情</h4><p>每次和父母相处超过两周时间，必然有一次吵架。而这次发生在了今天。</p>
+<p>起因是什么？在吃晚饭时无意中，我又说到生活费相比一些同学少得多。加上在前几天与几个小学同学吃火锅，而同学提到他的生活费还算不少，我回家便无意提起了这件事。这两次加起来对于她来说，我的抱怨有点过于多了，然后就在饭桌上开始了那些老套的“教育”。在争论中我情绪有点激动，有些眼泪。吃完饭后在我不想继续了，想上楼回房间时，妈妈说希望我留下来继续交流。但经过了又一个让我痛苦与失望（对他们和自己）的讨论，我就上楼了。她说导致吵架的原因是因为交流太少。我认为是因为交流太多。</p>
+<p>和父母的关系算不上很好。我这样认为：每个人都会本能的坚持自己的观点、排斥别人提出的意见。而对于他们来说，他们的观点有很多是错误的，而他们却无比笃定。每次有我始终觉得荒谬无比的事情发生时，他们也会用自己的观点解释。</p>
+<p>从初中开始，每次吵架妈妈必然会说一句话“我们租房来这里（初&#x2F;高中）上学&#x2F;我们供你上大学，学习是唯一目的，别忘记你来这里是做什么的。”这便是一个例子。</p>
+<p>比如我已经向她解释过无数次苹果手机更适合我，但她仍然会”翻旧账“式的说买苹果手机纯粹是崇洋媚外与虚荣。</p>
+<p>每次听到爸爸在说到“未来局势很严峻”“你不够努力”……此类看似对我的发展关心、实则抨击我的话时，从他的语气，我都会感到他似乎是在对我的“窘迫”感到高兴与嘲笑，似乎不希望看到我有所成就。说这种话必然会被某些人所抨击。I don’t give a shit.</p>
+<h4 id="从备考期末到今天"><a href="#从备考期末到今天" class="headerlink" title="从备考期末到今天"></a>从备考期末到今天</h4><p>在备考阶段总感觉学习效率不高，总是分心，于是开始每天昼伏夜出：早上将近十二点起床吃午饭，晚上学到两点或四点睡觉。从结果来看是满意的，因为专业课的分数从未如此高过。</p>
+<p>在备考阶段，总是想到这样一个问题：”我这样复习的意义是什么？“我早已确保自己不会挂科，我有必要努力追求更高的分数吗？但其实每科还是复习了很长时间。</p>
+<p>与戴翎一起吃了几次饭，炒菜、沙县小吃、鸡公煲。</p>
+<p>最近吃饭时的电子下饭菜是生活大爆炸。</p>
+<h4 id="ending"><a href="#ending" class="headerlink" title="ending"></a>ending</h4><p>发生了一些事情，想记录却一直不能很好的表达。无所谓了，已经习惯了这种”无能狂怒“。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/10/23/%E7%88%B7%E7%88%B7%EF%BC%8C%E4%BD%A0%E5%85%B3%E6%B3%A8%E7%9A%84%E5%8D%9A%E4%B8%BB%E6%9B%B4%E6%96%B0%E5%95%A6%EF%BC%81/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mingec">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="my chaotic notebook">
+      <meta itemprop="description" content="mingec's blog">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | my chaotic notebook">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/10/23/%E7%88%B7%E7%88%B7%EF%BC%8C%E4%BD%A0%E5%85%B3%E6%B3%A8%E7%9A%84%E5%8D%9A%E4%B8%BB%E6%9B%B4%E6%96%B0%E5%95%A6%EF%BC%81/" class="post-title-link" itemprop="url">爷爷，你关注的博主更新啦！</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2023-10-23 01:06:45 / Modified: 19:19:59" itemprop="dateCreated datePublished" datetime="2023-10-23T01:06:45+08:00">2023-10-23</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>没想到我的博客也能被催更。感谢doctor d！</p>
+<p>每次回顾过去的一段时间，都会不由自主地说出：”过去xx天过得就像💩一样“。但如果再稍微仔细想想的话，还是会有一些小小的快乐片段夹杂在其中。而最近也不例外。太多时候都会感到自己运气很不好，心态很不好，记性也很不好。很小的困难就能打倒我。</p>
+<p>有过一些开心的moments。</p>
+<p>比如七号晚上的时候莫名其妙地抢到了林俊杰在咸阳的演唱会门票。虽然听他的歌不太多，不过还是蛮期待的。这些天刷到了一些他的现场的视频，很喜欢开场曲《记得》的“谁还记得爱情开始变化的时候？”。今天竟然做梦梦见自己因为睡过头了错过去现场了，梦醒了依然伤心了很久，才发现是一场梦。</p>
+<p>比如在阴历生日那天和嘚，邰去健身，打球，烧烤，喝酒。算是快乐的。这些天和他们一起吃了很多饭，稍微有点心疼，但其实倒也没啥。</p>
+<p>或者比如第一次因为抽烟感受到了所谓的愉悦的感受。以后一定会重新描述这种feeling。</p>
+<p>比如和老同学见面，和好朋友聊天。</p>
+<p>最近经常会突然想到一些事情，然后会突然陷入焦虑。这种现象在关掉手机准备入睡时尤其频繁。很老套，和之前一样，想到自己如果不能考上研究生，如果不能实现梦想，如果那些自己的期望永远都不能实现。每次想到这里，会慌到害怕，就好像溺水了或是窒息。很不想说自己有抑郁症这种，但有时候确实会焦虑，害怕到崩溃。具体怎么个崩溃法，其实似乎也没有严重。</p>
+<p>于是受够了这种自我的正反馈，自己对自己的心里开导也只是治标不治本，就开始尝试抽烟来缓解了。。到目前还好没有上瘾，也没有过因为突然想抽而抽。期望有一天能不再担心那些未来的事情，到那时希望自己再也不smoking了。</p>
+<p>计网怎么都学不到正常进度。总是学上一两天就搁置了，很难坚持。同时这周开始突然学习任务很重，看到那么多要学的东西，有时也会产生上述的情绪。</p>
+<p>和妈妈也关系不好。某天打电话的时候突然忍受不了她的唠叨，就决定不打电话了。于是就从之前每周两次电话变成了每周一次。也不想说自己发生的琐事了。</p>
+<p>就像一个糟老头子，最近对很多东西抱有很大的反感和厌恶。</p>
+<p>看到一句话：“不以他人之得视为己之失“，给了我一些教育意义和警钟。但，倒不是说因为看到一句话，就使自己产生了改变。是明确告诉我自己的某些思想是错误的。奇奇怪怪</p>
+<p>anyway，对我影响最大的一句话应该是：“爱一个人，就认认真真地去爱；恨一个人，就坦坦荡荡地去恨。”多少给我的负面情绪很多安放的理由。</p>
+<p>这篇文章从计划要写到post在博客上拖了很久，在这期间，我每次有想法时，会把想法很简短的记录在草稿里，然后有时间了再慢慢的详细地扩充。这样其实很符合 “ 我杂乱无章的记事本 ” 这个主题。写到这里，发现这篇文章有些太悲观了吧，悲观到删了些阴暗的内容，仍然觉得不是很好。</p>
+<p>引用歌词并不是一个超级highlevel的事情，但我此刻还是很想引用五月天的一句 “长大难道是人必经的溃烂？”</p>
+<p>这结尾也太逊了。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/08/22/%E5%91%BC%E5%92%8C%E6%B5%A9%E7%89%B9Hohhot/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mingec">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="my chaotic notebook">
+      <meta itemprop="description" content="mingec's blog">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | my chaotic notebook">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/08/22/%E5%91%BC%E5%92%8C%E6%B5%A9%E7%89%B9Hohhot/" class="post-title-link" itemprop="url">呼和浩特Hohhot</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2023-08-22 17:04:39" itemprop="dateCreated datePublished" datetime="2023-08-22T17:04:39+08:00">2023-08-22</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-08-30 23:47:38" itemprop="dateModified" datetime="2023-08-30T23:47:38+08:00">2023-08-30</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">生活</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>一直不知道怎么开头，就先这样吧。</p>
+<p>和朋友说自己像是有“幼儿园综合征”，在春游前一天会兴奋的睡不着。</p>
+<p>仿佛是突然就正式地决定了今年一定要去一次周杰伦的演唱会，然后严肃地在闲鱼上找卖家，很快地买了票，兴致勃勃地计划行程。我给好朋友说：人在接近幸福的时候最幸福。果然是这样。整个暑假都几乎是短裤＋拖鞋的我开始为演唱会准备自认为得体的衣服，同时拍照的时候能更上镜一些，我也重新坚持了跑步，强迫自己多跑一圈又一圈。同时也开始听在歌单中的不熟的那些歌。</p>
+<p>我买的是18号的票，计划的是17号晚上的硬座，18号早上到，19号下午的硬座回西安。</p>
+<p>就这样，the very day 终于到了。在从西安出发前，还和小坤吃了兰湘子。在一晚上的硬座上看了小坤推荐的《阅后即焚》，实在太困了也就迷迷糊糊地睡了一会儿。早上八点就到了呼市，按照看好的攻略，直奔宽巷子去吃早餐。</p>
+<p>早餐在吃烧麦的时候，和一个老哥聊了起来，他从北京骑摩托来，看了17号的那场，吃完饭就继续骑行去山西。吃完早饭就骑共享电车去了大召寺。没进寺庙，去寺庙外的塞上老街走了一圈，买了奶皮。前几口还是很惊艳的，但对一个人来说，还是有点腻。</p>
+<p>之后就骑电车回了青旅。睡了一觉，兴致勃勃地出发去体育馆。让其他人帮我用拍立得拍了照。然后就进场了。</p>
+<img src="IMG_8329.JPG" height=512 width=512 />
+
+<img src="IMG_8370.JPG" height=512 width=512 />
+
+<img src="IMG_8572.JPG" height=512 width=512 />
+
+<p>给好朋友说，感觉一切就像梦一样，若是在几个月之前，根本不能想象能见到这么喜欢的歌手（这感觉有点像21年第一次去看接球比赛一样，梦想照进了现实一般）。</p>
+<p>不知道是不是因为自己在网上已经看了很多遍别人的录像，或者是因为在听到自己很喜欢的歌时忙着录像，似乎我并没有像自己预期的那样很感动。我不是很容易哭，全程仅仅是在《半兽人》开场的时候眼眶湿润了一下，再就挤不出眼泪了。但似乎其实并不影响体验感。无悔了！</p>
+<p><img src="/2023/08/22/%E5%91%BC%E5%92%8C%E6%B5%A9%E7%89%B9Hohhot/IMG_8575.JPG" alt="x"></p>
+<p>第二天在青旅认识了两位同样从外省来呼市看演唱会的大学生。当即一拍即合，我改签火车到了晚上十点半，先去场馆外听一遍再去火车站。白天便三人去了内蒙古博物院和宽巷子吃烤羊肉串，之后去场外听到《告白气球》，飞奔到地铁站踏上返程火车。</p>
+<p><img src="/2023/08/22/%E5%91%BC%E5%92%8C%E6%B5%A9%E7%89%B9Hohhot/IMG_8609.JPEG" alt="x"></p>
+<p>忽然想起一段自己一直读不下去的微博文章，讲的大概是诸如青年啊、勇敢啊这些。但其实我不想把自己这次旅行和所谓的“年轻&#x2F;义无反顾”联系起来，那些抖音上的说走就走的旅行、拍的极尽自由的vlog在我看来多少有点虚假。本来想以“odyssey”命名这篇博客，但感觉这只是一次平淡的旅程，远不是所谓的诸如“魔戒之旅”或是“马里奥大冒险”那般一段伟大的冒险。</p>
+<p>anyway，写到这里似乎是有点悲观了，但完全不是这样的。就像我最喜欢的歌词“我们的故事像梦一样~~”，梦想照进了现实。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/08/12/first-blog/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mingec">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="my chaotic notebook">
+      <meta itemprop="description" content="mingec's blog">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | my chaotic notebook">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/08/12/first-blog/" class="post-title-link" itemprop="url">first blog</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2023-08-12 16:21:24" itemprop="dateCreated datePublished" datetime="2023-08-12T16:21:24+08:00">2023-08-12</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024-01-30 20:17:13" itemprop="dateModified" datetime="2024-01-30T20:17:13+08:00">2024-01-30</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="大家好，这是我第一篇自己完成的博客！！！"><a href="#大家好，这是我第一篇自己完成的博客！！！" class="headerlink" title="大家好，这是我第一篇自己完成的博客！！！"></a>大家好，这是我第一篇自己完成的博客！！！</h2>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">mingec</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
 <noscript>
-	<style>
-		article img.lazyload[src^="data:image/svg+xml;base64,PCEtLUFyZ29uTG9hZGluZy0tPg"]{display: none;}
-		.comment-item-text .comment-sticker.lazyload{display: none;}
-	</style>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
 </noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
 </body>
-
-
-
 </html>
-
